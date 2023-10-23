@@ -1,0 +1,72 @@
+Project Title: Library Management System
+Objective: Develop a system to manage the cataloging, borrowing, and returning of books in a library.
+
+Features:
+
+User Roles:
+
+Librarian:
+Add/Delete/Update books.
+Issue books to members.
+View issued books and return dates.
+Search for books.
+Member:
+View available books.
+Search for books.
+Borrow books.
+View borrowed books and due dates.
+Book Details:
+
+Book ID (Unique)
+Title
+Author
+Genre
+Publication Year
+Borrow status (Available or Borrowed)
+Search Capability:
+
+By Book ID
+By Title
+By Author
+File Storage:
+
+Save and load library data from a file.
+Steps to get started:
+
+Design Classes:
+
+Book:
+Attributes: Book ID, Title, Author, Genre, Publication Year, Borrow status.
+Methods: Getters, Setters.
+User:
+Attributes: Name, User ID, Password, Role (Librarian or Member)
+Methods: Getters, Setters, View Book Details.
+Librarian (inherits User):
+Additional Methods: Add/Delete/Update Book, Issue Book, View Issued Books.
+Member (inherits User):
+Attributes: List of borrowed books
+Methods: Borrow Book, View Borrowed Books, Search Books.
+Design User Interface:
+
+Command-line-based UI would be simplest for this project.
+Menus for different user roles, book management, and member actions.
+Implement File I/O:
+
+Use C++ file streams (fstream) to save and load the library data to and from a file.
+Implement Search Capabilities:
+
+Use standard algorithms (std::find, std::find_if) along with lambda functions or custom search predicates.
+Error Handling:
+
+Ensure that users cannot borrow books that are already borrowed.
+Check for valid input throughout the system.
+Provide feedback messages for successful or failed operations.
+Bonus Features:
+
+Implement overdue notifications.
+Add user registration and login capabilities.
+Implement a rating system where members can rate books.
+Tools and Libraries:
+
+Basic C++ (No external libraries are needed for the core functionality).
+C++ Standard Library (for containers like std::vector, std::map, file I/O, algorithms, etc.).
