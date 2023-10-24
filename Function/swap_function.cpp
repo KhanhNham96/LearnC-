@@ -19,7 +19,16 @@ Use references to make the swap.
 Test to make sure it works!
 */
 #include <iostream>
+void swap(int a, int b){
+    int c;
+    c = a;
+    a = b;
+    b = c;
+    std::cout << a << " " << b;
+
+}
 int main(){
-    std::cout << "hello";
-    return 0;
+    int a = 5;
+    int b = 10;
+    swap(a,b);
 }
