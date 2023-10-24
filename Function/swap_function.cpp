@@ -18,3 +18,8 @@ Tips:
 Use references to make the swap.
 Test to make sure it works!
 */
+#include <iostream>
+int main(){
+    std::cout << "hello";
+    return 0;
+}
